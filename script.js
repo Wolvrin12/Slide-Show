@@ -5,10 +5,6 @@ const dots = document.getElementsByClassName("dot");
 
 let slideIndex = 1;
 
-const changeSlide = (slide_num) => {
-  showSlides((slideIndex = slide_num));
-};
-
 const showSlides = (n) => {
   let i;
 
@@ -40,4 +36,20 @@ prev.addEventListener("click", () => {
 
 next.addEventListener("click", () => {
   showSlides((slideIndex += 1));
+});
+
+dots[0].addEventListener("click", () => {
+  showSlides((slideIndex = 1));
+});
+
+dots[1].addEventListener("click", () => {
+  showSlides((slideIndex = 2));
+});
+
+dots[2].addEventListener("click", () => {
+  showSlides((slideIndex = 3));
+});
+
+dots[3].addEventListener("click", () => {
+  showSlides((slideIndex = 4));
 });
