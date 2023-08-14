@@ -19,19 +19,19 @@ img {
 }
 
 .slides {
-  position: relative;
   max-width: 1000px;
+  position: relative;
   margin: auto;
 }
 
-.prev-btn,
-.next-btn {
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  margin-top: -22px;
-  padding: 16px;
   top: 50%;
   width: auto;
-  cursor: pointer;
+  padding: 16px;
+  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -40,32 +40,32 @@ img {
   user-select: none;
 }
 
-.next-btn {
+.next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev-btn:hover,
-.next-btn:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.caption {
-  position: absolute;
-  padding: 8px 12px;
-  width: 100%;
-  bottom: 8px;
+.slide-caption {
   color: #f2f2f2;
   font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
 }
 
-.slide-number {
-  position: absolute;
-  top: 0;
-  padding: 8px 12px;
+.slide-num {
   color: #f2f2f2;
   font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
 .dot {
