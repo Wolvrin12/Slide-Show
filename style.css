@@ -8,7 +8,7 @@ body {
   font-family: Verdana, sans-serif;
 }
 
-.mySlides {
+.slide {
   display: none;
 }
 
@@ -18,20 +18,20 @@ img {
   vertical-align: middle;
 }
 
-.slideshow-container {
-  max-width: 1000px;
+.slides {
   position: relative;
+  max-width: 1000px;
   margin: auto;
 }
 
-.prev,
-.next {
-  cursor: pointer;
+.prev-btn,
+.next-btn {
   position: absolute;
+  margin-top: -22px;
+  padding: 16px;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  cursor: pointer;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -40,32 +40,32 @@ img {
   user-select: none;
 }
 
-.next {
+.next-btn {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover,
-.next:hover {
+.prev-btn:hover,
+.next-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.text {
+.caption {
+  position: absolute;
+  padding: 8px 12px;
+  width: 100%;
+  bottom: 8px;
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
   text-align: center;
 }
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+.slide-number {
   position: absolute;
   top: 0;
+  padding: 8px 12px;
+  color: #f2f2f2;
+  font-size: 12px;
 }
 
 .dot {

@@ -1,4 +1,4 @@
-let slides = document.getElementsByClassName("mySlides");
+let slides = document.getElementsByClassName("slide");
 let dots = document.getElementsByClassName("dot");
 let slideIndex = 1;
 
