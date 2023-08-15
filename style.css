@@ -5,23 +5,79 @@
 }
 
 body {
+  padding: 10px;
   font-family: Verdana, sans-serif;
+}
+
+.slides {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
 }
 
 .slide {
   display: none;
+  height: 450px;
+  background: #f1f0f0;
 }
 
-img {
-  width: 100%;
-  max-height: 428px;
-  vertical-align: middle;
+.slide-num {
+  position: absolute;
+  padding: 8px 12px;
+  top: 0;
+  color: #f2f2f2;
+  font-size: 12px;
+  z-index: 100;
 }
 
-.slides {
-  max-width: 900px;
+.slide-content {
   position: relative;
-  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.slide-info {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.slide-img {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 50px;
+  width: 45%;
+  height: 100%;
+}
+
+.slide-img img {
+  position: relative;
+  width: auto;
+  height: 90%;
+  border-radius: 25px;
+}
+
+.slide-titles {
+  padding: 15px;
+  height: 100%;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slide-title {
+  margin-bottom: 20px;
+}
+
+.slide-text {
+  padding: 25px;
+  letter-spacing: 2px;
+  line-height: 25px;
 }
 
 .prev,
@@ -32,9 +88,9 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #405250;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -50,42 +106,27 @@ img {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.slide-caption {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.slide-num {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 .dots {
   text-align: center;
 }
 
 .dot {
-  cursor: pointer;
+  display: inline-block;
+  margin: 0 2px;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
-  display: inline-block;
+  cursor: pointer;
   transition: all 0.6s ease;
 }
 
-.active,
+.active {
+  background-color: #323131;
+}
+
 .dot:hover {
-  background-color: #717171;
+  background-color: #8d8c8c;
 }
 
 .fade {
@@ -104,8 +145,7 @@ img {
 
 @media only screen and (max-width: 300px) {
   .prev,
-  .next,
-  .text {
+  .next {
     font-size: 11px;
   }
 }
