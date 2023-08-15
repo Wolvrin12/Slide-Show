@@ -49,9 +49,8 @@ body {
 
 .slide-img {
   position: relative;
-  padding-top: 20px;
-  padding-left: 45px;
-  width: 45%;
+  padding: 20px 45px 0 45px;
+  width: auto;
   height: 100%;
 }
 
@@ -65,7 +64,7 @@ body {
 .slide-titles {
   padding: 15px;
   height: 100%;
-  width: 55%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
