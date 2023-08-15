@@ -49,9 +49,10 @@ body {
 
 .slide-img {
   position: relative;
-  padding: 20px 45px 0 45px;
-  width: auto;
+  padding: 20px 30px 0 45px;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .slide-img img {
