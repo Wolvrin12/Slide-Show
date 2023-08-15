@@ -5,6 +5,12 @@ const dots = document.getElementsByClassName("dot");
 
 let slideIndex = 1;
 
+for (let i = 0; i < slides.length; i++) {
+  if (slides[i].classList.contains("overflow")) {
+    slides[i].style.overflowY = "scroll";
+  }
+}
+
 const showSlides = (n) => {
   let i;
 
